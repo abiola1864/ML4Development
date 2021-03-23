@@ -33,8 +33,13 @@ FE_FRTR_W_TFR2<- dta2 %>% rename(FE_FRTR_W_TFR=Value)
 #
 url3<-("http://api.dhsprogram.com/rest/dhs/v7/datasets?countryIds=EG")
 jsondata3<-fromJSON(url3) 
-dta3<-data.table(jsondata3$Data)
 
+
+
+url4<-('https://api.dhsprogram.com/rest/dhs/datasets/MW?fileFormat=GC')
+jsondata4<-fromJSON(url4) 
+dta4<- lapply(jsondata4$Data, function(x) { unlist(x) })
+j4 <- as.data.frame(do.call("rbind", dta4),stringsAsFactors=FALSE)
 
 
 
