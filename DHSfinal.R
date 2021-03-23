@@ -1,3 +1,28 @@
+############
+#note
+#################
+
+
+#These codes are used to download DHS data for Tanzania, Rwanda, and Uganda
+#from the DHS R package called RDHS, then merged with geocovariates data
+#sourced online via URL links of each. Final data saved as csv as finaldata
+#and added to Github
+
+#From the RDHS package, I am able download specific variables rather than the whole
+#DHS data. For now, variables on maternal mortality are not available using
+#variable names that starts with mm e.g mm1, mm2. I will keep checking.
+
+#For an easy check of other variable names and labels, use WorldBank library at
+#https://microdata.worldbank.org/index.php/catalog/2597/data-dictionary/F1?file_name=RECH0
+
+#Variables downloaded are age of HH member, anemia level for child, father and mother
+# and their body mass.
+
+#for geocovariates, there are GPS coordinates, cluster ID, nightlight composite
+
+
+
+
 
 #install libraries
 
@@ -158,5 +183,5 @@ finaldata<-inner_join(dat1,geocov1,
              by =  c('SurveyID', "DHSCLUST"))
 
 # write CSV file
-write.csv(finaldata, "finaldata.csv")
+write.csv(finaldata, "finaldata/finaldata_abiola.csv")
 
