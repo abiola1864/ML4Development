@@ -8,7 +8,7 @@ Once these two files are saved in the evaluator's computer, the code will allow 
 
 As expected, please run the MALNUTRITION csv file in the malnutrition.ipynb code and the ANAEMIA csv file in the anaemia.ipynb code. 
 
-All models are contained in each code file as the user progresses through the code.
+Lastly, please change the file path in the code to match where it is stored in your computer. The rest has been adapted to make it as smooth as possible.
 
 THANK YOU!
 - JEAN PIERRE AND VISHALI
