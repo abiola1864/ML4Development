@@ -1,0 +1,14 @@
+The codes can ve found in anaemia.ipynb and malnutrition.ipynb, respectively for both outcome variables we test our models with. 
+
+For the data, please download the ANAEMIA and MALNUTRITION csv files using the following google drive link. 
+
+https://drive.google.com/drive/u/0/folders/180JmxxCySGN2LUZyrVt45LeYza0t3pT8
+
+Once these two files are saved in the evaluator's computer, the code will allow to select from computer files and choose each respective file. 
+
+As expected, please run the MALNUTRITION csv file in the malnutrition.ipynb code and the ANAEMIA csv file in the anaemia.ipynb code. 
+
+All models are contained in each code file as the user progresses through the code.
+
+THANK YOU!
+- JEAN PIERRE AND VISHALI
